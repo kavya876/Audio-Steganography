@@ -21,7 +21,7 @@ class AudioSteganographyApp:
         self.heading_label.pack(pady=10)
 
         # Load and display the image
-        image_path =  "C:/Users/home/OneDrive/Desktop/3030/image.png.jpg"
+        image_path =  "image.png.jpg"
         self.image = Image.open(image_path)
         self.image = self.image.resize((200, 200))
         self.photo = ImageTk.PhotoImage(self.image)
@@ -48,7 +48,7 @@ class AudioSteganographyApp:
 
     def open_project_info(self):
         # Replace 'project_info.txt' with the path to your project info file
-        file_path = "C:/Users/home/OneDrive/Desktop/3030/htmldoc.html"
+        file_path = "htmldoc.html"
 
         try:
             os.startfile(file_path)
